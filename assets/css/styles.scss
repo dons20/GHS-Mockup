@@ -1,0 +1,29 @@
+$color1: #800000;
+$color2: #290000;
+$color3: #222222;
+$color4: #ffffff;
+
+/* Coolors Exported Palette - coolors.co/800000-290000-222222-ffffff-e56399 */
+
+@mixin background-color($rgb, $alpha) {
+    background: rgba($rgb, $alpha);
+}
+
+#top-nav {
+    @include background-color($color2, 0.5);
+}
+
+#top-heading {
+    @include background-color($color2, 0.5);
+}
+
+.hamburger-inner {
+    background-color: $color4;
+    &::before, &::after {
+        @extend .hamburger-inner;
+    }
+}
+
+.uk-section-primary {
+    background-color: $color1;
+}

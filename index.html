@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Initial Head Imports and other default stuff -->
+        <title>Glenmuir High School - Mockup</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.9/css/uikit.min.css" />
+        <link href="assets/css/hamburgers.min.css" rel="stylesheet">
+        <link href="assets/css/styles.min.css" rel="stylesheet">
+    </head>
+    <body>
+        <!-- Top navbar created here and Hamburger icon for Mobile-->
+        <div class="uk-section uk-section-xlarge uk-section-media uk-light uk-background-cover uk-animation-fade" style="background-image: url(assets/images/header-min.jpg)">
+            <nav id="top-nav" class="uk-navbar-container uk-position-top uk-padding-small" uk-navbar>
+                <div class="uk-navbar-left">
+                    <a class="uk-navbar-item uk-logo" href=""><img class="uk-responsive-height" src="assets/images/logo.jpg" alt="Logo" /></a>
+                </div>
+                <div class="uk-navbar-right">
+                    <ul class="uk-navbar-nav uk-visible@l">
+                        <li class="uk-active"><a href="">Home</a></li>
+                        <li><a href="">Contact</a></li>
+                        <li><a href="">Register</a></li>
+                        <li><a href="">Blog</a></li>
+                    </ul>
+                    <div class="uk-navbar-right uk-hidden@l">
+                        <button class="hamburger hamburger--slider" uk-toggle="target: #mobile-menu" type="button">
+                            <span class="hamburger-box">
+                                <span class="hamburger-inner"></span>
+                            </span>
+                        </button> 
+                    </div>
+                </div>
+                
+            </nav>
+            <!-- Centered Heading for section 1 -->
+            <h1 id="top-heading" class="uk-heading-primary uk-text-center uk-padding">Glenmuir High School</h1>
+        </div>
+
+        <!-- Mobile Menu Code -->
+        <div id="mobile-menu" uk-offcanvas="overlay: true;">
+            <div class="uk-offcanvas-bar uk-width-1-3">
+                <ul class="uk-nav uk-nav-default">
+                    
+                </ul>
+            </div>
+        </div>
+
+        <!-- Second Navigation Header with Sticky-->
+        <div class="uk-section uk-section-xsmall uk-section-primary uk-padding-small" uk-sticky="media: 1200">
+            <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar="mode: hover;">
+                <div class="uk-navbar-center uk-visible@l">
+                    <ul class="uk-navbar-nav">
+                        <li class="uk-active"><a href="">Home</a></li>
+                        <li>
+                            <a href="">Events</a>
+                            <div class="uk-navbar-dropdown uk-link-reset">
+                                <ul class="uk-nav uk-navbar-dropdown-nav">
+                                    <li><a href="">Upcoming Events</a></li>
+                                    <li><a href="">Regional Events Events</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="">Alumni Chapters</a>
+                            <div class="uk-navbar-dropdown uk-link-reset">
+                                <ul class="uk-nav uk-navbar-dropdown-nav">
+                                    <li><a href="">Jamaica</a></li>
+                                    <li><a href="">Florida</a></li>
+                                    <li><a href="">New York</a></li>
+                                    <li><a href="">Toronto</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="">Make a Gift</a>
+                            <div class="uk-navbar-dropdown uk-link-reset">
+                                <ul class="uk-nav uk-navbar-dropdown-nav">
+                                    <li><a href="">Ways to Give</a></li>
+                                    <li><a href="">FAQ</a></li>
+                                    <li><a href="">Donate</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="">About Alumni</a>
+                            <div class="uk-navbar-dropdown uk-link-reset">
+                                <ul class="uk-nav uk-navbar-dropdown-nav">
+                                    <li class="uk-nav-header">About Us</li>
+                                    <li><a href="">Mission Statement</a></li>
+                                    <li><a href="">Alumni Board Members</a></li>
+                                    <li class="uk-nav-divider"></li>
+                                    <li><a href="">Volunteer</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+        <!-- News & Updates Section-->
+        <div class="uk-section" uk-scrollspy="cls:uk-animation-slide-bottom;">
+            <div class="uk-container uk-container-large">
+                <h1 class="uk-heading-primary uk-text-center uk-heading-divider uk-box-shadow-medium">News &amp; Updates</h1>
+                
+                <div class="uk-flex-stretch" uk-grid>
+                    <div class="uk-width-2-3@m">
+                        <article class="uk-article">
+
+                            <h1 class="uk-article-title"><a class="uk-link-reset" href="">New Website!</a></h1>
+
+                            <p class="uk-article-meta">Written by <a href="#">Administrator</a> on 9 Febuary 2017. Posted in <a href="#">Blog</a></p>
+
+                            <p class="uk-text-lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
+
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+                            <div class="uk-grid-small uk-child-width-auto" uk-grid>
+                                <div>
+                                    <a class="uk-button uk-button-text" href="#">Read more</a>
+                                </div>
+                                <div>
+                                    <a class="uk-button uk-button-text" href="#">0 Comments</a>
+                                </div>
+                            </div>
+
+                        </article>
+                        <article class="uk-article">
+
+                            <h1 class="uk-article-title"><a class="uk-link-reset" href="">Important Announcement</a></h1>
+
+                            <p class="uk-article-meta">Written by <a href="#">Administrator</a> on 9 Febuary 2017. Posted in <a href="#">Blog</a></p>
+
+                            <p class="uk-text-lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
+
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+                            <div class="uk-grid-small uk-child-width-auto" uk-grid>
+                                <div>
+                                    <a class="uk-button uk-button-text" href="#">Read more</a>
+                                </div>
+                                <div>
+                                    <a class="uk-button uk-button-text" href="#">0 Comments</a>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="uk-width-1-3@m">
+                        <div class="uk-card uk-card-body uk-card-default uk-card-hover">
+                            <h3 class="uk-card-title">Search the Alumni Directory</h3>
+                            <form class="uk-form-stacked uk-search uk-search-default">
+                                <label class="uk-form-label">Name:</label>
+                                <input class="uk-search-input" type="search" placeholder="Search...">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Script Importing -->
+        <script defer src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+        <script defer src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.9/js/uikit.min.js"></script>
+        <script defer src="assets/js/scripts.min.js"></script>
+    </body>
+</html>
