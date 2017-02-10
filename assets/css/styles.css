@@ -3,7 +3,8 @@
   background: rgba(41, 0, 0, 0.5); }
 
 #top-heading {
-  background: rgba(41, 0, 0, 0.5); }
+  background: rgba(41, 0, 0, 0.5);
+  text-shadow: 2px 2px 5px #000; }
 
 .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
   background-color: #ffffff; }

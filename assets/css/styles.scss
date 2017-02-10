@@ -15,6 +15,7 @@ $color4: #ffffff;
 
 #top-heading {
     @include background-color($color2, 0.5);
+    text-shadow: 2px 2px 5px #000;
 }
 
 .hamburger-inner {
