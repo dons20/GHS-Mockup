@@ -6,8 +6,8 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.9/css/uikit.min.css" />
-        <link href="assets/css/hamburgers.min.css" rel="stylesheet">
-        <link href="assets/css/styles.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="assets/css/hamburgers.min.css" />
+        <link rel="stylesheet" href="assets/css/styles.min.css" />
     </head>
     <body>
         <!-- Top navbar created here and Hamburger icon for Mobile-->
@@ -18,7 +18,7 @@
                 </div>
                 <div class="uk-navbar-right">
                     <ul class="uk-navbar-nav uk-visible@l">
-                        <li class="uk-active uk-button-text"><a href="">Home</a></li>
+                        <li class="uk-active uk-button-text"><a href="index.html">Home</a></li>
                         <li class="uk-button-text"><a href="">Contact</a></li>
                         <li class="uk-button-text"><a href="">Register</a></li>
                         <li class="uk-button-text"><a href="">Blog</a></li>
@@ -41,11 +41,11 @@
         <div id="mobile-menu" uk-offcanvas="overlay: true;">
             <div class="uk-offcanvas-bar">
                 <ul class="uk-nav uk-nav-primary" uk-nav="multiple: true">
-                    <li class="uk-active"><a href="#">Home</a></li>
+                    <li class="uk-active"><a href="index.html">Home</a></li>
                     <li class="uk-parent">
                         <a href="#">Events</a>
                         <ul class="uk-nav-sub">
-                            <li><a href="#">Upcoming Events</a></li>
+                            <li><a href="upcoming-events.html">Upcoming Events</a></li>
                             <li><a href="#">Regional Events</a></li>
                         </ul>
                     </li>
@@ -88,15 +88,15 @@
 
         <!-- Second Navigation Header with Sticky-->
         <div class="uk-section uk-section-xsmall uk-section-primary uk-padding-small" uk-sticky="media: 1200; animation: uk-animation-slide-top;">
-            <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar="mode: hover;">
+            <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar="mode: hover; offset: -10;">
                 <div class="uk-navbar-center uk-visible@l">
                     <ul class="uk-navbar-nav">
-                        <li class="uk-active"><a href="">Home</a></li>
+                        <li class="uk-active"><a href="index.html">Home</a></li>
                         <li>
                             <a href="">Events</a>
                             <div class="uk-navbar-dropdown uk-link-reset">
                                 <ul class="uk-nav uk-navbar-dropdown-nav">
-                                    <li><a href="">Upcoming Events</a></li>
+                                    <li><a href="upcoming-events.html">Upcoming Events</a></li>
                                     <li><a href="">Regional Events</a></li>
                                 </ul>
                             </div>
@@ -198,6 +198,8 @@
                 </div>
             </div>
         </div>
+
+        <?php include 'footer.html';?>
 
         <!-- Script Importing -->
         <script defer src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>

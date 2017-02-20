@@ -21,6 +21,7 @@ Options -Indexes
 	RewriteRule ^(.*/)?\.svn/ - [F,L]
 	ErrorDocument 403 "Access Forbidden"
 	RewriteCond %{HTTP_USER_AGENT} libwww-perl.*
+    RewriteRule ^([^\.]+)$ $1.html [NC,L]
 	RewriteRule .* – [F,L]
 </IfModule>
 # Protect htaccess file
