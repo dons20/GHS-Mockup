@@ -10,12 +10,6 @@
   background-color: #ffffff; }
 
 .uk-active {
-  -webkit-animation-duration: 1s !important;
-  -moz-animation-duration: 1s !important;
-  animation-duration: 1s !important;
-  -webkit-animation-timing-function: ease-out !important;
-  -moz-animation-timing-function: ease-out !important;
-  animation-timing-function: ease-out !important;
   padding: inherit; }
 
 .uk-section-primary {

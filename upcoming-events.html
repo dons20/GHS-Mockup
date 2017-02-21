@@ -9,114 +9,11 @@
         <link rel="stylesheet" href="assets/css/styles.min.css" />
     </head>
     <body>
-        <!-- Mobile Menu Code -->
-        <div id="mobile-menu" uk-offcanvas="overlay: true;">
-            <div class="uk-offcanvas-bar">
-                <ul class="uk-nav uk-nav-primary" uk-nav="multiple: true">
-                    <li class="uk-active"><a href="../">Home</a></li>
-                    <li class="uk-parent">
-                        <a href="#">Events</a>
-                        <ul class="uk-nav-sub">
-                            <li><a href="upcoming-events">Upcoming Events</a></li>
-                            <li><a href="#">Regional Events</a></li>
-                        </ul>
-                    </li>
-                    <li class="uk-parent">
-                        <a href="#">Alumni Chapters</a>
-                        <ul class="uk-nav-sub">
-                            <li><a href="#">Jamaica</a></li>
-                            <li><a href="#">Florida</a></li>
-                            <li><a href="#">New York</a></li>
-                            <li><a href="#">Toronto</a></li>
-                        </ul>
-                    </li>
-                    <li class="uk-parent">
-                        <a href="#">Make a Gift</a>
-                        <ul class="uk-nav-sub">
-                            <li><a href="#">Ways to Give</a></li>
-                            <li><a href="#">FAQ</a></li>
-                            <li><a href="#">Donate</a></li>
-                        </ul>
-                    </li>
-                    <li class="uk-parent">
-                        <a href="#">About Alumni</a>
-                        <ul class="uk-nav-sub">
-                            <li>
-                                <a href="#">About Us</a>
-                                <ul>
-                                    <li><a href="#">Mission Statement</a></li>
-                                    <li><a href="#">Alumni Board Members</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#">Regional Events</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#">Contact</a></li>
-                    <li><a href="#">Register</a></li>
-                    <li><a href="#">Blog</a></li>
-                </ul>
-            </div>
-        </div>
+        <!-- Mobile Menu -->
+        <?php include 'includes/mobile-header.html' ?>
 
-        <!-- Second Navigation Header with Sticky-->
-        <div class="uk-section uk-section-xsmall uk-section-primary uk-padding-small" uk-sticky="media: 1200; animation: uk-animation-slide-top;">
-            <div class="uk-navbar-right uk-hidden@l">
-                <button class="hamburger hamburger--slider" uk-toggle="target: #mobile-menu" type="button">
-                    <span class="hamburger-box">
-                        <span class="hamburger-inner"></span>
-                    </span>
-                </button> 
-            </div>
-            <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar="mode: hover; offset: -10;">
-                <div class="uk-navbar-center uk-visible@l">
-                    <ul class="uk-navbar-nav">
-                        <li class="uk-active"><a href="../">Home</a></li>
-                        <li>
-                            <a href="">Events</a>
-                            <div class="uk-navbar-dropdown uk-link-reset">
-                                <ul class="uk-nav uk-navbar-dropdown-nav">
-                                    <li><a href="upcoming-events">Upcoming Events</a></li>
-                                    <li><a href="">Regional Events</a></li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li>
-                            <a href="">Alumni Chapters</a>
-                            <div class="uk-navbar-dropdown uk-link-reset">
-                                <ul class="uk-nav uk-navbar-dropdown-nav">
-                                    <li><a href="">Jamaica</a></li>
-                                    <li><a href="">Florida</a></li>
-                                    <li><a href="">New York</a></li>
-                                    <li><a href="">Toronto</a></li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li>
-                            <a href="">Make a Gift</a>
-                            <div class="uk-navbar-dropdown uk-link-reset">
-                                <ul class="uk-nav uk-navbar-dropdown-nav">
-                                    <li><a href="">Ways to Give</a></li>
-                                    <li><a href="">FAQ</a></li>
-                                    <li><a href="">Donate</a></li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li>
-                            <a href="">About Alumni</a>
-                            <div class="uk-navbar-dropdown uk-link-reset">
-                                <ul class="uk-nav uk-navbar-dropdown-nav">
-                                    <li class="uk-nav-header">About Us</li>
-                                    <li><a href="">Mission Statement</a></li>
-                                    <li><a href="">Alumni Board Members</a></li>
-                                    <li class="uk-nav-divider"></li>
-                                    <li><a href="">Volunteer</a></li>
-                                </ul>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-        </div>
+        <!-- Primary Menu -->
+        <?php include 'includes/main-header.html' ?>
 
         <!-- Page Header Section -->
         <div class="uk-section uk-section-xsmall uk-section-default">
@@ -142,7 +39,7 @@
             </div>
         </div>
 
-        <?php include 'footer.html';?>
+        <?php include 'includes/footer.html';?>
         
         <!-- Script Imports -->
         <script defer src="https://code.jquery.com/jquery-3.1.1.min.js" 
