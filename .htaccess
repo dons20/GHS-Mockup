@@ -17,8 +17,18 @@
 Options -Indexes
 # Basic rewrite rules, stop unneeded PERL bot, block subversion directories
 <IfModule mod_rewrite.c>
+    Options +FollowSymLinks -MultiViews
+
+    DirectoryIndex index.html
+
 	RewriteEngine On
+    RewriteBase /
+	RewriteRule ^(.*/)?\.svn/ - [F,L]
+	ErrorDocument 403 "Access Forbidden"
+	RewriteCond %{HTTP_USER_AGENT} libwww-perl.*
+	RewriteRule .* – [F,L]
     
+    # Redirect from .html to relative links
     #example.com/page will display the contents of example.com/page.html
     RewriteCond %{REQUEST_FILENAME} !-f
     RewriteCond %{REQUEST_FILENAME} !-d
@@ -28,11 +38,6 @@ Options -Indexes
     #301 from example.com/page.html to example.com/page
     RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /.*\.html\ HTTP/
     RewriteRule ^(.*)\.html$ /$1 [R=301,L]
-
-	RewriteRule ^(.*/)?\.svn/ - [F,L]
-	ErrorDocument 403 "Access Forbidden"
-	RewriteCond %{HTTP_USER_AGENT} libwww-perl.*
-	RewriteRule .* – [F,L]
 </IfModule>
 # Protect htaccess file
 <Files .htaccess>
