@@ -9,10 +9,24 @@
 .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
   background-color: #ffffff; }
 
+#nav ul li,
+#hero-nav ul li,
+#mobile-menu ul li {
+  background-color: #ffffff;
+  border-radius: 15px;
+  padding-left: -10px;
+  transition-property: background-color;
+  transition-duration: 0.5s;
+  transition-timing-function: ease; }
+  #nav ul li:hover,
+  #hero-nav ul li:hover,
+  #mobile-menu ul li:hover {
+    background-color: #FFE166; }
+
 .uk-active {
   padding: inherit; }
 
 .uk-section-primary {
-  background-color: #800000; }
+  background-color: #4D0000; }
 
 /*# sourceMappingURL=styles.css.map */
