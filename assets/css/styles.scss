@@ -11,12 +11,18 @@ $color5: #ffffff;
     background: rgba($rgb, $alpha);
 }
 
+#hero {
+    
+    background: 
+        linear-gradient(rgba($color3, 0.25), rgba($color3, 0.25)),
+        url(../images/header-min.jpg) center center no-repeat;
+}
+
 #top-nav {
-    @include background-color($color2, 0.5);
+    @include background-color($color2, 0.7);
 }
 
 #top-heading {
-    @include background-color($color2, 0.5);
     text-shadow: 2px 2px 5px #000;
 }
 

@@ -2,8 +2,22 @@ $(document).ready(function () {
     var $offCanvas = $("#mobile-menu");
     var $hamburger = $(".hamburger");
     var current = location.pathname;
-    console.log(current);
 
+    //Fade In Body
+    $("body").css("display", "none");
+    $("body").fadeIn(250);
+
+    //Fade Out on navigation link clicks
+    $(".uk-nav a, .uk-navbar a").click(function(event) {
+        event.preventDefault();
+        linkLocation = this.href;
+        $("body").fadeOut(250, redirectPage);
+    })
+
+    function redirectPage() {
+        window.location = linkLocation;
+    }
+    
     //Add active class to current link
     var $heroLink = $('#hero-nav a[href="' +current+'"]');
     $heroLink.parent().addClass('uk-active');
