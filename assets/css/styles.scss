@@ -1,7 +1,8 @@
+$color0: #800000;
 $color1: #4D0000;
 $color2: #290000;
 $color3: #222222;
-$color4: #FFE166;
+$color4: #FFCC00;
 $color5: #ffffff;
 
 /* Coolors Exported Palette - coolors.co/800000-290000-222222-ffffff-e56399 */
@@ -27,12 +28,11 @@ $color5: #ffffff;
 }
 
 #nav, 
-#hero-nav,
-#mobile-menu {
+#hero-nav {
 
     & ul li {
-        background-color: $color5;
-        margin-left: -10px;
+        background-color: inherit;
+        padding-left: 10px;
         transition-property: background-color;
         transition-duration: 0.5s;
         transition-timing-function: ease;

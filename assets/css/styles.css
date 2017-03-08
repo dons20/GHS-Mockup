@@ -10,18 +10,15 @@
   background-color: #ffffff; }
 
 #nav ul li,
-#hero-nav ul li,
-#mobile-menu ul li {
-  background-color: #ffffff;
-  border-radius: 15px;
-  padding-left: -10px;
+#hero-nav ul li {
+  background-color: inherit;
+  padding-left: 10px;
   transition-property: background-color;
   transition-duration: 0.5s;
   transition-timing-function: ease; }
   #nav ul li:hover,
-  #hero-nav ul li:hover,
-  #mobile-menu ul li:hover {
-    background-color: #FFE166; }
+  #hero-nav ul li:hover {
+    background-color: #FFCC00; }
 
 .uk-active {
   padding: inherit; }

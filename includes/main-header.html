@@ -1,5 +1,5 @@
 <!-- Main Navigation Header with Sticky-->
-<div class="uk-section uk-section-xsmall uk-section-primary uk-padding-small uk-visible@l" uk-sticky="media: 1200; animation: uk-animation-slide-top; show-on-up: true">
+<div class="uk-section uk-section-xsmall uk-section-primary uk-padding-small" uk-sticky="media: 1200; animation: uk-animation-slide-top; show-on-up: true">
     <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar="mode: hover; offset: -10;">
         <div class="uk-navbar-center uk-visible@l">
             <ul id="nav" class="uk-navbar-nav">
@@ -47,6 +47,13 @@
                     </div>
                 </li>
             </ul>
+        </div>
+        <div class="uk-navbar-right uk-hidden@l">
+            <button class="hamburger hamburger--squeeze" uk-toggle="target: #mobile-menu" type="button">
+                <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                </span>
+            </button> 
         </div>
     </nav>
 </div>
