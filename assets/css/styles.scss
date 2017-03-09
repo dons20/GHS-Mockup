@@ -11,6 +11,17 @@ $color5: #ffffff;
     background: rgba($rgb, $alpha);
 }
 
+@mixin box-shadow($args) {
+    box-shadow: $args;
+    -moz-box-shadow: $args;
+    -webkit-box-shadow: $args;
+}
+
+#content {
+    @include box-shadow(0 0 12px 2px $color3);
+    border: 1px solid #000;
+}
+
 #hero {
     background: 
         linear-gradient(rgba($color3, 0.25), rgba($color3, 0.25)),
@@ -43,9 +54,7 @@ $color5: #ffffff;
 }
 
 #primary-menu {
-    box-shadow: 0 8px 6px -6px #000000;
-    -moz-box-shadow: 0 8px 6px -6px #000000;
-    -webkit-box-shadow: 0 8px 6px -6px #000000;
+    @include box-shadow(0 8px 6px -6px #000000);
 }
 
 .hamburger-inner {
@@ -59,11 +68,24 @@ $color5: #ffffff;
     padding: inherit;
 }
 
+.uk-button-primary {
+    @include background-color($color0, 0.95);
+    &:hover {
+        @include background-color($color1, 0.95);
+    }
+}
+
+
 .uk-notification {
+    border: 1px solid #000;
 
     @media (min-width: 1200px) {   
         width: 30%;
         margin: auto;
+    }
+
+    &-message-primary {
+        color: $color4;
     }
 }
 

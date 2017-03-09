@@ -1,4 +1,10 @@
 /* Coolors Exported Palette - coolors.co/800000-290000-222222-ffffff-e56399 */
+#content {
+  box-shadow: 0 0 12px 2px #222222;
+  -moz-box-shadow: 0 0 12px 2px #222222;
+  -webkit-box-shadow: 0 0 12px 2px #222222;
+  border: 1px solid #000; }
+
 #hero {
   background: linear-gradient(rgba(34, 34, 34, 0.25), rgba(34, 34, 34, 0.25)), url(../images/header-min.jpg) center center no-repeat; }
 
@@ -30,9 +36,19 @@
 .uk-active {
   padding: inherit; }
 
+.uk-button-primary {
+  background: rgba(128, 0, 0, 0.95); }
+  .uk-button-primary:hover {
+    background: rgba(77, 0, 0, 0.95); }
+
 .uk-notification {
-  width: 30%;
-  margin: auto; }
+  border: 1px solid #000; }
+  @media (min-width: 1200px) {
+    .uk-notification {
+      width: 30%;
+      margin: auto; } }
+  .uk-notification-message-primary {
+    color: #FFCC00; }
 
 .uk-section-primary {
   background-color: #4D0000; }
