@@ -12,7 +12,6 @@ $color5: #ffffff;
 }
 
 #hero {
-    
     background: 
         linear-gradient(rgba($color3, 0.25), rgba($color3, 0.25)),
         url(../images/header-min.jpg) center center no-repeat;
@@ -26,12 +25,6 @@ $color5: #ffffff;
     text-shadow: 2px 2px 5px #000;
 }
 
-.hamburger-inner {
-    background-color: $color5;
-    &::before, &::after {
-        @extend .hamburger-inner;
-    }
-}
 
 #nav, 
 #hero-nav {
@@ -49,8 +42,29 @@ $color5: #ffffff;
     }
 }
 
+#primary-menu {
+    box-shadow: 0 8px 6px -6px #000000;
+    -moz-box-shadow: 0 8px 6px -6px #000000;
+    -webkit-box-shadow: 0 8px 6px -6px #000000;
+}
+
+.hamburger-inner {
+    background-color: $color5;
+    &::before, &::after {
+        @extend .hamburger-inner;
+    }
+}
+
 .uk-active {
     padding: inherit;
+}
+
+.uk-notification {
+
+    @media (min-width: 1200px) {   
+        width: 30%;
+        margin: auto;
+    }
 }
 
 .uk-section-primary {

@@ -1,18 +1,12 @@
 /* Coolors Exported Palette - coolors.co/800000-290000-222222-ffffff-e56399 */
 #hero {
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(rgba(34, 34, 34, 0.25), rgba(34, 34, 34, 0.25)), url(../images/header-min.jpg) center center no-repeat;
-  background-size: cover; }
+  background: linear-gradient(rgba(34, 34, 34, 0.25), rgba(34, 34, 34, 0.25)), url(../images/header-min.jpg) center center no-repeat; }
 
 #top-nav {
   background: rgba(41, 0, 0, 0.7); }
 
 #top-heading {
   text-shadow: 2px 2px 5px #000; }
-
-.hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
-  background-color: #ffffff; }
 
 #nav ul li,
 #hero-nav ul li {
@@ -25,8 +19,20 @@
   #hero-nav ul li:hover {
     background-color: #FFCC00; }
 
+#primary-menu {
+  box-shadow: 0 8px 6px -6px #000000;
+  -moz-box-shadow: 0 8px 6px -6px #000000;
+  -webkit-box-shadow: 0 8px 6px -6px #000000; }
+
+.hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+  background-color: #ffffff; }
+
 .uk-active {
   padding: inherit; }
+
+.uk-notification {
+  width: 30%;
+  margin: auto; }
 
 .uk-section-primary {
   background-color: #4D0000; }
