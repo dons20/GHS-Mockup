@@ -6,7 +6,6 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.18/css/uikit.min.css" />
-        <link rel="stylesheet" href="assets/css/hamburgers.min.css" />
         <link rel="stylesheet" href="assets/css/styles.min.css" />
     </head>
     <body>
@@ -84,12 +83,27 @@
         <?php include 'includes/footer.html';?>
 
         <!-- Script Importing -->
-        <script defer src="https://code.jquery.com/jquery-3.1.1.min.js" 
+        <script src="https://code.jquery.com/jquery-3.1.1.min.js" 
                 integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
         <script defer src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.18/js/uikit.min.js" 
                 integrity="sha256-LUEy7nYsrDZzEXVbDyFBiGH7w/7Jmy21CEB9Oha8hvc=" crossorigin="anonymous"></script>
         <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.18/js/uikit-icons.min.js" 
                 integrity="sha256-14DawicAGydmUlgILWilIY+jh281m4dnI9dPPUrW8rw=" crossorigin="anonymous"></script>-->
         <script defer src="assets/js/scripts.min.js"></script>
+
+        <script>
+            $(document).ready(function () {
+                $(this).delay(1000).queue(function() {
+                    UIkit.notification({
+                        message: [  "<p class=\"uk-text-center\"><strong>The GHS Task-Force Needs You!</strong>", 
+                                    "<br /><span class=\"uk-text-meta\">The GHSPSA is an informal group of past students of <a href=\"\/volunteer\">Glenmuir High School</a> which meets monthly in Kingston and more frequently in the lead-up to any activity. Please feel free to join us.</span></p><a class=\"uk-button uk-button-primary uk-button-small uk-width-1-1\" href=\"\/volunteer\">Join</a>"
+                                    ],
+                        status: 'primary',
+                        pos: 'bottom-right',
+                        timeout: 3000
+                    });
+                });
+            });
+        </script>
     </body>
 </html>
