@@ -14,6 +14,8 @@ $(document).ready(function () {
         $("body").fadeOut(250, redirectPage);
     });
 
+    //$('#main-header').attr('uk-navbar', 'mode: hover; offset: -10; dropbar: true; dropbar-mode: push;');
+
     function redirectPage() {
         window.location = linkLocation;
     }

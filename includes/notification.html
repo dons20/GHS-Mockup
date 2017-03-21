@@ -1,0 +1,18 @@
+<script>
+    window.addEventListener('DOMContentLoaded', function() {
+        (function($) {
+            $(document).ready(function () {
+                $(this).delay(1000).queue(function() {
+                    UIkit.notification({
+                        message: [  "<p class=\"uk-text-center\"><strong>The GHS Task-Force Needs You!</strong>", 
+                                    "<br /><span class=\"uk-text-meta\">The GHSPSA is an informal group of past students of <a href=\"\/volunteer\">Glenmuir High School</a> which meets monthly in Kingston and more frequently in the lead-up to any activity. Please feel free to join us.</span></p><a class=\"uk-button uk-button-primary uk-button-small uk-width-1-1\" href=\"\/volunteer\">Join</a>"
+                                    ],
+                        status: 'primary',
+                        pos: 'bottom-right',
+                        timeout: 3000
+                    });
+                });
+            });
+        })(jQuery);
+    });
+</script>

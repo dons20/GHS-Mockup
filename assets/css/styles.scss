@@ -2,8 +2,9 @@ $color0: #800000;
 $color1: #4D0000;
 $color2: #290000;
 $color3: #222222;
-$color4: #FFCC00;
+$color4: #ffcc00;
 $color5: #ffffff;
+$color6: #ED1C24;
 
 /* Coolors Exported Palette - coolors.co/800000-290000-222222-ffffff-e56399 */
 
@@ -25,17 +26,12 @@ $color5: #ffffff;
 #hero {
     background: 
         linear-gradient(rgba($color3, 0.25), rgba($color3, 0.25)),
-        url(../images/header-min.jpg) center center no-repeat;
+        url(../images/header-min.jpg) center center no-repeat fixed;
 }
 
 #top-nav {
-    @include background-color($color2, 0.7);
+    @include background-color($color1, 1);
 }
-
-#top-heading {
-    text-shadow: 2px 2px 5px #000;
-}
-
 
 #nav, 
 #hero-nav {
@@ -43,12 +39,13 @@ $color5: #ffffff;
     & ul li {
         background-color: inherit;
         padding-left: 10px;
-        transition-property: background-color;
+        transition-property: background-color color;
         transition-duration: 0.5s;
         transition-timing-function: ease;
 
         &:hover {
             background-color: $color4;
+            color: white;
         }
     }
 }
@@ -58,7 +55,7 @@ $color5: #ffffff;
 }
 
 .hamburger {
-  padding: 15px 15px;
+  padding-right: 15px;
   display: inline-block;
   cursor: pointer;
   transition-property: opacity, filter;
@@ -149,6 +146,10 @@ $color5: #ffffff;
   }
 }
 
+.text-shadow {
+    text-shadow: 2px 2px 5px #000;
+}
+
 .uk-active {
     padding: inherit;
 }
@@ -176,4 +177,8 @@ $color5: #ffffff;
 
 .uk-section-primary {
     background-color: $color1;
+}
+
+.uk-section-secondary {
+    background-color: $color0;
 }
